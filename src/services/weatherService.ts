@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-export const generateLondonWeatherData = (): WeatherData => {
+export function generateLondonWeatherData(): WeatherData {
   // Generate random weather data
   const generatedWeatherData = {
     temperature: faker.number.int({ min: -15, max: 30 }),
@@ -11,7 +11,7 @@ export const generateLondonWeatherData = (): WeatherData => {
 
   // Return weather data
   return generatedWeatherData;
-};
+}
 
 export const generateDublinWeatherData = (): WeatherData => {
   // Generate random weather data
